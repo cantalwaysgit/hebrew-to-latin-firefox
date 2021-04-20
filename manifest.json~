@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Hebrew to Latin",
+  "version": "1.0",
+
+  "description": "Replaces Hebrew characters with Latin characters",
+
+  "icons": {
+/*    "48": "icons/border-48.png" */
+  },
+
+  "content_scripts": [
+    {
+/*      "matches": ["*://*.mozilla.org/*"], */
+      "js": ["hebrew-to-latin.js"]
+    }
+  ]
+
+}

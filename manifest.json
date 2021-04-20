@@ -1,0 +1,24 @@
+// display hebrew as latin characters
+
+// in firefox, go to about:debugging > this firefox > load temporary add-on
+
+{
+
+  "manifest_version": 2,
+  "name": "Hebrew to Latin",
+  "version": "1.0",
+
+  "description": "replaces hebrew with latin characters",
+
+  "icons": {
+    "48": "icons/border-48.png" 
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"], 
+      "js": ["hebrew-to-latin.js"]
+    }
+  ]
+
+}
